@@ -1,0 +1,268 @@
+/*--------------------- all styles*/
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 20px 52px;
+    background: linear-gradient(159.59deg, #DEDC00 -6.8%, #76B53A 38.35%, #0E8E75 106.08%);
+    color: #fff;
+    border: 1px solid #808080;
+    border-radius: 50px;
+    transition: all 1s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #808080;
+    border: 1px solid #DEDC00;
+}
+
+    /*--------------------- all styles*/
+header {
+    display: flex;
+    flex-direction: column;
+    background: #ececec;
+}
+
+header .head-logo {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: #808080;
+}
+
+header .head-logo-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header .head-promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .head-promo .head-promo-back {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(50%, 50%, 50%, .7);
+    z-index: 2;
+}
+
+header .head-promo .head-promo-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+}
+
+header .head-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+    min-height: 400px;
+}
+
+header .head-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+header .head-list ul li {
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: #fff;
+}
+
+header .head-promo .head-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+header .head-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+}
+
+header .head-order .btn {
+    margin-top: 20px;
+}
+
+/*----------------------- ingredients*/
+.ingredients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.ingredients .ingredient {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients .ingredient-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.ingredients .ingredient-left .ingredient-left-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background: url("../img/bg-advantages-comp.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.ingredients .ingredient-left .ingredient-left-img img{
+    width: 100%;
+}
+
+.ingredients .ingredient-left p {
+    width: 70%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ingredients .ingredient-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredients .ingredient-center img{
+    width: 70%;
+}
+
+.ingredients .ingredient-center a {
+    margin-top: 30px;
+}
+
+.ingredients .ingrL-top:after{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: #808080;
+    position: absolute;
+    top: 80%;
+    right: -120px;
+    transform: rotate(50deg);
+}
+
+.ingredients .ingrL-center:after {
+    content: '';
+    width: 150px;
+    height: 3px;
+    background: #808080;
+    position: absolute;
+    top: 80%;
+    right: -80px;
+    transform: rotate(0);
+}
+
+.ingredients .ingrL-bottom:after {
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: #808080;
+    position: absolute;
+    top: 35%;
+    right: -120px;
+    transform: rotate(-50deg);
+}
+
+.ingredients .ingrR-top:before{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: #808080;
+    position: absolute;
+    top: 80%;
+    left: -120px;
+    transform: rotate(-50deg);
+}
+.ingredients .ingrR-center:before{
+    content: '';
+    width: 150px;
+    height: 3px;
+    background: #808080;
+    position: absolute;
+    top: 80%;
+    left: -80px;
+    transform: rotate(0);
+}
+.ingredients .ingrR-bottom:before{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: #808080;
+    position: absolute;
+    top: 35%;
+    left: -120px;
+    transform: rotate(50deg);
+}
+
+/*----------------------- slider*/
+.reviews{
+    display: flex;
+    width: 100%;
+}
+
+.slider__wrapper {
+    overflow: hidden;
+}
+
+.slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255, 0.8);
+    font-size: 7rem;
+}
+
+.reviews-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-item p {
+    margin-top: 20px;
+}
