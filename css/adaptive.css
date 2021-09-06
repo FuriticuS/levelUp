@@ -1,7 +1,122 @@
 @media (min-width: 1024px) and (max-width: 1200px){
+    .container {
+        width: 1024px;
+    }
+
+    .ingredients .ingrR-center:before {
+        width: 100px;
+        left: -30px;
+    }
+
+    .ingredients .ingrL-center:after {
+        width: 100px;
+        right: -30px;
+    }
 
 }
 
 @media (min-width: 300px) and (max-width: 1023px){
+    .container {
+        width: 100%;
+    }
 
+    header .head-logo {
+        height: 100px;
+    }
+
+    header .head-logo-block {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    header .head-promo .head-promo-block {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    header .head-list {
+        min-height: 100px;
+        width: 100%;
+    }
+
+    header .head-list ul li {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    header .head-order {
+        width: 100%;
+    }
+
+    .ingredients {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .ingredients .ingrL-top:after,
+    .ingredients .ingrL-center:after,
+    .ingredients .ingrL-bottom:after,
+    .ingredients .ingrR-top:before,
+    .ingredients .ingrR-center:before,
+    .ingredients .ingrR-bottom:before{
+        content: none;
+    }
+
+    .ingredients .ingredient-center {
+        margin-bottom: 50px;
+    }
+
+    .ingredients .ingredient-left .ingredient-left-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .promo .promo-text {
+        flex-direction: column;
+    }
+
+    .promo .promo-text-img{
+        width: 100%;
+    }
+
+    .promo .promo-text-all {
+        margin: auto;
+        width: 90%;
+    }
+
+    .promo .promo-text-img ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .order form .form-product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .order form .form-product .form-name h2 {
+        font-size: 48px;
+    }
+
+    .order form .form-product .form-name img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .order form .form-input .form-date{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .order form .form-date .contacts-form-feedback-input {
+        width: 100%;
+    }
 }
